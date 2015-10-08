@@ -173,6 +173,7 @@ if( version_compare( PHP_VERSION, '5.3', '<' ) ) {
 	include( RCP_PLUGIN_DIR . 'includes/member-forms.php' );
 	include( RCP_PLUGIN_DIR . 'includes/member-functions.php' );
 	include( RCP_PLUGIN_DIR . 'includes/misc-functions.php' );
+	include( RCP_PLUGIN_DIR . 'includes/payment-functions.php' );
 	include( RCP_PLUGIN_DIR . 'includes/registration-functions.php' );
 	include( RCP_PLUGIN_DIR . 'includes/subscription-functions.php' );
 	include( RCP_PLUGIN_DIR . 'includes/error-tracking.php' );
