@@ -222,8 +222,8 @@ function rcp_process_registration() {
 				$redirect = rcp_get_return_url( $user_data['id'] );
 
 				$subscription_data = array(
-					'price'             => $price,
-					'discount'          => $base_price - $price,
+					'price'             => ! empty( $discounted_price ) ? $discounted_price : $price,
+					'discount'          => $base_price - $discounted_price,
 					'discount_code'     => $discount,
 					'fee' 			    => ! empty( $subscription->fee ) ? number_format( $subscription->fee, 2 ) : 0,
 					'length' 			=> $expiration->duration,
